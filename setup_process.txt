@@ -1,0 +1,7 @@
+STEP 1:open LEARNMIRE_SERVER in VS Code
+STEP 2:open terminal in VSCODE
+STEP 2:pip install virtualenv
+STEP 3:python -m venv ven
+STEP 4:.\ven\Scripts\activate
+STEP 4:Set-ExecutionPolicy Unrestricted -Scope Process(Only Applicable if STEP 4 is failing and repeat)
+STEP 5:
