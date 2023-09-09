@@ -10,7 +10,9 @@ STEP 4:.\ven\Scripts\activate
 STEP 4:Set-ExecutionPolicy Unrestricted -Scope Process(Only Applicable if STEP 4 is failing and repeat)
 STEP 5: pip install flask
 STEP 6: pip install zappa
+STEP 7: pip install python-dotenv (To use config file)
+you can test application in local by running :flask run
 below process is for deployment(once setup is done and code is ready then need to do below steps)
 STEP 7: zappa init
 STEP 8: answer the prompts
-STEP 9: zappa deploy [stage]
+STEP 9: zappa deploy [stage](this will deploy on lambda)
