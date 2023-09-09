@@ -6,7 +6,7 @@ LOGGING = {
             }
         },
         "formatters": {
-            "standard": {"format": "%(asctime)s %(name)-12s %(levelname)-8s %(message)s"},
+            "standard": {"format": "%(asctime)s %(name)-12s %(levelname)-8s  %(lineno)d %(message)s"},
             "compact": {"format": "%(asctime)s %(message)s"},
         },
         "handlers": {
