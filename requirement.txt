@@ -4,3 +4,4 @@ flask==2.3.3
 zappa==0.57.0
 boto==2.49.0
 python-decouple
+python-dotenv

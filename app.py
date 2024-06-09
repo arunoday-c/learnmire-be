@@ -32,10 +32,5 @@ def validate_api_key(headers):
     api_key = headers['Api-Key']
     flag = secrets.compare_digest(api_key, config("LEARNMIRE_APP_KEY")) 
     if(flag == False):
-        raise  PermissionError("application api key didn't match")       
+        raise  PermissionError("application api key didn't match")  
 
-
-
-
-if __name__ == "__main__":
-    app.run(debug=True,port=config("APP_PORT"))

@@ -8,11 +8,31 @@ STEP 2:pip install virtualenv
 STEP 3:python -m venv ven
 STEP 4:.\ven\Scripts\activate (This is needed every time when we open a new terminal)
 STEP 4:Set-ExecutionPolicy Unrestricted -Scope Process(Only Applicable if STEP 4 is failing and repeat)
+python -m flask run
 STEP 5: pip install flask
 STEP 6: pip install zappa
 STEP 7: pip install python-dotenv (To use config file)
+
+all of above installation you can see in env/lib
 you can test application in local by running :flask run
 below process is for deployment(once setup is done and code is ready then need to do below steps)
 STEP 7: zappa init
 STEP 8: answer the prompts
 STEP 9: zappa deploy [stage](this will deploy on lambda)
+
+pip install pipenv
+pip install line_profiler : for profiling
+pip install gunicorn : for webserver
+pip install waitress : for fcntl error in windows
+pip list : for checking all install
+
+waitress-serve --listen=127.0.0.1:5000 wsgi:app
+gunicorn --bind 0.0.0.0:5000 wsgi:app
+
+waitress-serve --listen=127.0.0.1:5001 wsgi:app
+
+npm install -g aws-cdk: install cdk
+
+cdk init sample-app --language python
+
+python -m pip install -r requirements.txt
